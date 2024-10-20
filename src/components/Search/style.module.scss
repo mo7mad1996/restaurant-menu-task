@@ -1,0 +1,27 @@
+.form {
+  background-color: #e8ecef;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+  margin: 1em;
+
+  button {
+    color: var(--primary-color);
+    padding: 1em;
+    border: none;
+    background: none;
+    font-weight: bold;
+  }
+
+  input {
+    text-align: center;
+    flex: 1;
+    outline: none;
+    border: none;
+    background: none;
+
+    &::placeholder {
+      color: #b9b9b7;
+    }
+  }
+}

@@ -1,0 +1,149 @@
+.popup_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  .popup_content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    height: 80vh;
+    overflow: auto;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+    .close_button {
+      background: white;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      margin: 0 0 0 auto;
+      display: block;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      position: sticky;
+      top: 0;
+    }
+
+    .item_banner {
+      margin-bottom: 15px;
+
+      .item_image {
+        margin-bottom: 15px;
+        border-radius: 8px;
+
+        display: block;
+        width: 100%;
+      }
+      h4,
+      p {
+        margin: 0;
+      }
+    }
+
+    .price {
+      font-weight: bold;
+      color: var(--primary-color);
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .row {
+      align-items: center;
+    }
+
+    .quantity_selector {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 6px;
+      padding: 6px;
+      margin: 10px 0;
+      border: 1px solid var(--primary-color);
+      color: var(--primary-color);
+
+      button {
+        border: none;
+        background: none;
+        padding: 5px 10px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin: 0 10px;
+      }
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .add_section {
+      text-align: left;
+      margin-bottom: 15px;
+
+      h5 {
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      label {
+        margin-bottom: 5px;
+        font-size: 14px;
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        input {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .required {
+      color: red;
+      font-size: 12px;
+      font-weight: normal;
+    }
+
+    .add_to_cart_button {
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 1em;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 90%;
+      position: sticky;
+      bottom: 1em;
+      left: 5%;
+    }
+    h5,
+    .row {
+      display: flex;
+      justify-content: space-between;
+      * {
+        flex: unset;
+      }
+    }
+
+    h5 {
+      border-radius: 10px;
+      padding: 0.3em 0.6em;
+      background-color: #f6f6f6;
+    }
+  }
+}
